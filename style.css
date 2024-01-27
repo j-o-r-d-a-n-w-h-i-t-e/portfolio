@@ -14,7 +14,7 @@ html{
 --rightboxwidth: 70%;
 --rightgapwidth: 2.5%;
 
-background-image: url(bg.jpg);
+background-image: url(bg_.jpg);
 background-position-x: -50px;
 }
 
@@ -47,9 +47,20 @@ h1 {
 font-size: 2.5em;
 }
 
+h2 {
+    font-size: 0.8em;
+    font-style: italic;
+    }
+
 h3 {
 font-size: 0.8em;
 }
+
+h4 {
+    font-size: 0.5em;
+    font-style: italic;
+    font-weight: 160;
+    }
 
 h5 {
 font-size: 0.5em;
@@ -62,7 +73,6 @@ font-weight: 160;
 #pagelayout{
 display: grid;
 grid-template-columns: var(--leftgapwidth) var(--leftboxwidth) var(--middleboxwidth) var(--rightboxwidth) var(--rightgapwidth);
-grid-template-rows: 5% 1fr;
 grid-column-gap: 0px;
 max-height: 100vh;
 }
@@ -78,7 +88,6 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 grid-column: 2/3;
-grid-row: 2/3;
 }
 
 /* Container for the content in the left column of the main grid. Holds the content central to column by restricting height to browser window size, this removes scrolling for left container.*/
@@ -92,7 +101,6 @@ width: 80px;
 #projectbar {
 height: 90vh;
 grid-column: 4/5;
-grid-row: 2/3;
 overflow: scroll;
 scrollbar-width: none; /* Remove scrollbar for Firefox */
 -ms-overflow-style: none; /* Remove scrollbar for IE */
